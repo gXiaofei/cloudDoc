@@ -334,7 +334,7 @@ function App() {
             {loading && <Loader />}
             <div className='row no-gutters'>
                 <div className='col-3 bg-light left-panel'>
-                    <FileSearch title='My Document' onFileSearch={fileSearch} />
+                    <FileSearch title='My Document2' onFileSearch={fileSearch} />
                     <FileList
                         files={fileListArr}
                         onFileClick={fileClick}
