@@ -1,6 +1,6 @@
 {
   "name": "cloud-code",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "main": "main.js",
   "description": "Markdown",
@@ -21,10 +21,12 @@
     "buildMain": "webpack",
     "ele": "nodemon --watch main.js --watch src/menuTemplate.js --exec \"electron .\"",
     "dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && npm run ele\"",
+    "release": "cross-env GH_TOKEN=29063b62120b8c60121942e25beeb43b52bb605f electron-builder",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "prepack": "npm run build && npm run buildMain",
-    "predist": "npm run build && npm run buildMain"
+    "predist": "npm run build && npm run buildMain",
+    "prerelease": "npm run build && npm run buildMain"
   },
   "homepage": "./",
   "build": {
