@@ -12,6 +12,8 @@ files:
       - package.json
 extraMetadata:
   main: ./build/main.js
+publish:
+  - github
 extends: null
 mac:
   category: public.app-category.productivity

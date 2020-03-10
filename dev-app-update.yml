@@ -1,0 +1,6 @@
+owner: gXiaofei
+repo: cloudDoc
+provider: github
+updaterCacheDirName: cloud-code-updater
+publisherName:
+  - gxf

@@ -8,7 +8,7 @@
     "name": "gxf",
     "email": "1234@11.com"
   },
-  "repository": "https://www.electronjs.org",
+  "repository": "https://github.com/gXiaofei/cloudDoc",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "electron-store": "^5.1.1"
@@ -21,7 +21,7 @@
     "buildMain": "webpack",
     "ele": "nodemon --watch main.js --watch src/menuTemplate.js --exec \"electron .\"",
     "dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && npm run ele\"",
-    "release": "cross-env GH_TOKEN=29063b62120b8c60121942e25beeb43b52bb605f electron-builder",
+    "release": "cross-env GH_TOKEN=616b03310f3da17375b6722d63dc51c60d9e18bf electron-builder",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "prepack": "npm run build && npm run buildMain",
@@ -113,22 +113,23 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
     "classnames": "^2.2.6",
     "concurrently": "^5.1.0",
     "cross-env": "^7.0.0",
     "electron": "^8.0.2",
     "electron-builder": "^22.3.6",
+    "electron-is-dev": "^1.1.0",
+    "electron-updater": "^4.2.4",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
+    "qiniu": "^7.3.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
     "react-simplemde-editor": "^4.1.0",
     "uuid": "^7.0.1",
     "wait-on": "^4.0.1",
-    "webpack-cli": "^3.3.11",
-    "axios": "^0.19.2",
-    "electron-is-dev": "^1.1.0",
-    "qiniu": "^7.3.0"
+    "webpack-cli": "^3.3.11"
   }
 }
